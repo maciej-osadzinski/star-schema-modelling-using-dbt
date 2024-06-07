@@ -20,7 +20,7 @@ sources:
     tables:
       - name: Person
       - name: EmailAddress
-      - name: Adress
+      - name: Address
       - name: CountryRegion
       - name: StateProvince
 

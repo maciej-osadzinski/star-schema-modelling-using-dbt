@@ -9,3 +9,497 @@ models:
         tests:
           - unique
           - not_null
+
+  - name: stg_dim_sales_order_header
+    description: ""
+    columns:
+      - name: salesorderid
+        data_type: int
+        description: ""
+
+      - name: revisionnumber
+        data_type: tinyint
+        description: ""
+
+      - name: orderdate
+        data_type: datetime
+        description: ""
+
+      - name: duedate
+        data_type: datetime
+        description: ""
+
+      - name: shipdate
+        data_type: datetime
+        description: ""
+
+      - name: status
+        data_type: tinyint
+        description: ""
+
+      - name: salesordernumber
+        data_type: nvarchar
+        description: ""
+
+      - name: customerid
+        data_type: int
+        description: ""
+
+      - name: salespersonid
+        data_type: int
+        description: ""
+
+      - name: territoryid
+        data_type: int
+        description: ""
+
+      - name: billtoaddressid
+        data_type: int
+        description: ""
+
+      - name: shiptoaddressid
+        data_type: int
+        description: ""
+
+      - name: shipmethodid
+        data_type: int
+        description: ""
+
+      - name: creditcardid
+        data_type: int
+        description: ""
+
+      - name: creditcardapprovalcode
+        data_type: varchar
+        description: ""
+
+      - name: currencyrateid
+        data_type: int
+        description: ""
+
+      - name: subtotal
+        data_type: money
+        description: ""
+
+      - name: taxamt
+        data_type: money
+        description: ""
+
+      - name: freight
+        data_type: money
+        description: ""
+
+      - name: totaldue
+        data_type: money
+        description: ""
+
+      - name: comment
+        data_type: nvarchar
+        description: ""
+
+      - name: rowguid
+        data_type: uniqueidentifier
+        description: ""
+
+      - name: modifieddate
+        data_type: datetime
+        description: ""
+
+  - name: stg_dim_sales_territory
+    description: ""
+    columns:
+      - name: territoryid
+        data_type: int
+        description: ""
+
+      - name: countryregioncode
+        data_type: nvarchar
+        description: ""
+
+      - name: salesytd
+        data_type: money
+        description: ""
+
+      - name: saleslastyear
+        data_type: money
+        description: ""
+
+      - name: costytd
+        data_type: money
+        description: ""
+
+      - name: costlastyear
+        data_type: money
+        description: ""
+
+      - name: rowguid
+        data_type: uniqueidentifier
+        description: ""
+
+      - name: modifieddate
+        data_type: datetime
+        description: ""  
+
+  - name: stg_dim_customer
+    description: ""
+    columns:
+      - name: customerid
+        data_type: int
+        description: ""
+
+      - name: personid
+        data_type: int
+        description: ""
+
+      - name: storeid
+        data_type: int
+        description: ""
+
+      - name: territoryid
+        data_type: int
+        description: ""
+
+      - name: accountnumber
+        data_type: varchar
+        description: ""
+
+      - name: rowguid
+        data_type: uniqueidentifier
+        description: ""
+
+      - name: modifieddate
+        data_type: datetime
+        description: ""
+
+  - name: stg_dim_store
+    description: ""
+    columns:
+      - name: businessentityid
+        data_type: int
+        description: ""
+
+      - name: salespersonid
+        data_type: int
+        description: ""
+
+      - name: rowguid
+        data_type: uniqueidentifier
+        description: ""
+
+      - name: modifieddate
+        data_type: datetime
+        description: ""
+
+  - name: stg_dim_sales_order_detail
+    description: ""
+    columns:
+      - name: salesorderid
+        data_type: int
+        description: ""
+
+      - name: salesorderdetailid
+        data_type: int
+        description: ""
+
+      - name: carriertrackingnumber
+        data_type: nvarchar
+        description: ""
+
+      - name: orderqty
+        data_type: smallint
+        description: ""
+
+      - name: productid
+        data_type: int
+        description: ""
+
+      - name: specialofferid
+        data_type: int
+        description: ""
+
+      - name: unitprice
+        data_type: money
+        description: ""
+
+      - name: unitpricediscount
+        data_type: money
+        description: ""
+
+      - name: linetotal
+        data_type: numeric
+        description: ""
+
+      - name: rowguid
+        data_type: uniqueidentifier
+        description: ""
+
+      - name: modifieddate
+        data_type: datetime
+        description: ""
+
+  - name: stg_dim_sales_order_header_sales_reason
+    description: ""
+    columns:
+      - name: salesorderid
+        data_type: int
+        description: ""
+
+      - name: salesreasonid
+        data_type: int
+        description: ""
+
+      - name: modifieddate
+        data_type: datetime
+        description: ""
+
+  - name: stg_dim_sales_reason
+    description: ""
+    columns:
+      - name: salesreasonid
+        data_type: int
+        description: ""
+
+      - name: modifieddate
+        data_type: datetime
+        description: ""  
+
+  - name: stg_dim_person
+    description: ""
+    columns:
+      - name: businessentityid
+        data_type: int
+        description: ""
+
+      - name: persontype
+        data_type: nchar
+        description: ""
+
+      - name: title
+        data_type: nvarchar
+        description: ""
+
+      - name: suffix
+        data_type: nvarchar
+        description: ""
+
+      - name: emailpromotion
+        data_type: int
+        description: ""
+
+      - name: rowguid
+        data_type: uniqueidentifier
+        description: ""
+
+      - name: modifieddate
+        data_type: datetime
+        description: ""
+
+  - name: stg_dim_email_address
+    description: ""
+    columns:
+      - name: businessentityid
+        data_type: int
+        description: ""
+
+      - name: emailaddressid
+        data_type: int
+        description: ""
+
+      - name: emailaddress
+        data_type: nvarchar
+        description: ""
+
+      - name: rowguid
+        data_type: uniqueidentifier
+        description: ""
+
+      - name: modifieddate
+        data_type: datetime
+        description: ""
+
+  - name: stg_dim_address
+    description: ""
+    columns:
+      - name: addressid
+        data_type: int
+        description: ""
+
+      - name: addressline1
+        data_type: nvarchar
+        description: ""
+
+      - name: addressline2
+        data_type: nvarchar
+        description: ""
+
+      - name: city
+        data_type: nvarchar
+        description: ""
+
+      - name: stateprovinceid
+        data_type: int
+        description: ""
+
+      - name: postalcode
+        data_type: nvarchar
+        description: ""
+
+      - name: spatiallocation
+        data_type: geography
+        description: ""
+
+      - name: rowguid
+        data_type: uniqueidentifier
+        description: ""
+
+      - name: modifieddate
+        data_type: datetime
+        description: ""
+
+  - name: stg_dim_country_region
+    description: ""
+    columns:
+      - name: countryregioncode
+        data_type: nvarchar
+        description: ""
+
+      - name: modifieddate
+        data_type: datetime
+        description: ""
+
+  - name: stg_dim_state_province
+    description: ""
+    columns:
+      - name: stateprovinceid
+        data_type: int
+        description: ""
+
+      - name: stateprovincecode
+        data_type: nchar
+        description: ""
+
+      - name: countryregioncode
+        data_type: nvarchar
+        description: ""
+
+      - name: territoryid
+        data_type: int
+        description: ""
+
+      - name: rowguid
+        data_type: uniqueidentifier
+        description: ""
+
+      - name: modifieddate
+        data_type: datetime
+        description: ""
+
+  - name: stg_dim_product_subcategory
+    description: ""
+    columns:
+      - name: productsubcategoryid
+        data_type: int
+        description: ""
+
+      - name: productcategoryid
+        data_type: int
+        description: ""
+
+      - name: rowguid
+        data_type: uniqueidentifier
+        description: ""
+
+      - name: modifieddate
+        data_type: datetime
+        description: ""
+
+  - name: stg_dim_product
+    description: ""
+    columns:
+      - name: productid
+        data_type: int
+        description: ""
+
+      - name: productnumber
+        data_type: nvarchar
+        description: ""
+
+      - name: color
+        data_type: nvarchar
+        description: ""
+
+      - name: safetystocklevel
+        data_type: smallint
+        description: ""
+
+      - name: reorderpoint
+        data_type: smallint
+        description: ""
+
+      - name: standardcost
+        data_type: money
+        description: ""
+
+      - name: listprice
+        data_type: money
+        description: ""
+
+      - name: size
+        data_type: nvarchar
+        description: ""
+
+      - name: sizeunitmeasurecode
+        data_type: nchar
+        description: ""
+
+      - name: weightunitmeasurecode
+        data_type: nchar
+        description: ""
+
+      - name: weight
+        data_type: decimal
+        description: ""
+
+      - name: daystomanufacture
+        data_type: int
+        description: ""
+
+      - name: productline
+        data_type: nchar
+        description: ""
+
+      - name: class
+        data_type: nchar
+        description: ""
+
+      - name: style
+        data_type: nchar
+        description: ""
+
+      - name: productsubcategoryid
+        data_type: int
+        description: ""
+
+      - name: productmodelid
+        data_type: int
+        description: ""
+
+      - name: sellstartdate
+        data_type: datetime
+        description: ""
+
+      - name: sellenddate
+        data_type: datetime
+        description: ""
+
+      - name: discontinueddate
+        data_type: datetime
+        description: ""
+
+      - name: rowguid
+        data_type: uniqueidentifier
+        description: ""
+
+      - name: modifieddate
+        data_type: datetime
+        description: ""
