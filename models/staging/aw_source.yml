@@ -9,6 +9,10 @@ sources:
       - name: SalesTerritory
       - name: Customer
       - name: Store
+      - name: SalesOrderDetail
+      - name: SalesOrderHeaderSalesReason
+      - name: SalesReason
+
 
   - name: adventure_works_person
     database: AdventureWorks2019
@@ -16,11 +20,16 @@ sources:
     tables:
       - name: Person
       - name: EmailAddress
+      - name: Adress
+      - name: CountryRegion
+      - name: StateProvince
 
   - name: adventure_works_production
     database: AdventureWorks2019
     schema: Production
     tables:
       - name: ProductCategory
+      - name: ProductSubcategory
+      - name: Product
 
   
