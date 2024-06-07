@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_dim_product_category
+    description: "This table stores product category data"
+    columns:
+      - name: ProductCategoryId
+        description: "Primary key of this table"
+        tests:
+          - unique
+          - not_null

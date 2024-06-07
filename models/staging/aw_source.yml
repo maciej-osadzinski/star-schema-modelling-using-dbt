@@ -1,0 +1,26 @@
+version: 2
+
+sources:
+  - name: adventure_works_sales
+    database: AdventureWorks2019
+    schema: Sales
+    tables:
+      - name: SalesOrderHeader
+      - name: SalesTerritory
+      - name: Customer
+      - name: Store
+
+  - name: adventure_works_person
+    database: AdventureWorks2019
+    schema: Person
+    tables:
+      - name: Person
+      - name: EmailAddress
+
+  - name: adventure_works_production
+    database: AdventureWorks2019
+    schema: Production
+    tables:
+      - name: ProductCategory
+
+  
