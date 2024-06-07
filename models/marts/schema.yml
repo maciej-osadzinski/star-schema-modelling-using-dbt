@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: dimAddress
+    description: contains address info for the customers
