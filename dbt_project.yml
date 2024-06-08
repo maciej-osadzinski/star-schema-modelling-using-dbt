@@ -9,7 +9,7 @@ version: '1.0.0'
 profile: 'sqlserver_0'
 
 vars: 
-  'dbt_date:time_zone': "dbt_date:time_zone": "Europe/Warsaw"
+  'dbt_date:time_zone': "Europe/Warsaw"
 
 # These configurations specify where dbt should look for different types of files.
 # The `model-paths` config, for example, states that models in this project can be
