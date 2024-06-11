@@ -9,6 +9,7 @@ renamed as (
     select
         productid,
         productnumber,
+        name,
         color,
         safetystocklevel,
         reorderpoint,

@@ -14,7 +14,8 @@ renamed as (
         costytd,
         costlastyear,
         rowguid,
-        modifieddate
+        modifieddate,
+        name
 
     from source
 

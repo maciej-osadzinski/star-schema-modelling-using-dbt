@@ -10,7 +10,8 @@ renamed as (
         productsubcategoryid,
         productcategoryid,
         rowguid,
-        modifieddate
+        modifieddate,
+        name
 
     from source
 

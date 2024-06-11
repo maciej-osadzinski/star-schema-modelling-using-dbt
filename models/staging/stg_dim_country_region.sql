@@ -8,7 +8,8 @@ renamed as (
 
     select
         countryregioncode,
-        modifieddate
+        modifieddate,
+        name
 
     from source
 
