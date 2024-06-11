@@ -29,7 +29,8 @@ renamed as (
         totaldue,
         comment,
         rowguid,
-        modifieddate
+        modifieddate,
+        onlineorderflag
 
     from source
 

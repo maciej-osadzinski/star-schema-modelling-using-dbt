@@ -4,13 +4,16 @@ models:
   - name: dimAddress
     description: contains address info for the customers
   - name: dimCustomer
-    description: contains address info for the customers
+    description: contains detailed info about the customers
   - name: dimDate
-    description: contains address info for the customers
+    description: contains various date properties
   - name: dimOrderStatus
-    description: contains address info for the customers
+    description: contains info about order statuses
   - name: dimProduct
-    description: contains address info for the customers
+    description: contains info about products
   - name: dimSalesTerritory
-    description: contains address info for the customers
+    description: contains info about sales territories
+  - name: fctSales
+    description: contains sales metrics
+  
   
