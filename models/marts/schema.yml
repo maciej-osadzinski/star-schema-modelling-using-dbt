@@ -3,3 +3,14 @@ version: 2
 models:
   - name: dimAddress
     description: contains address info for the customers
+  - name: dimCustomer
+    description: contains address info for the customers
+  - name: dimDate
+    description: contains address info for the customers
+  - name: dimOrderStatus
+    description: contains address info for the customers
+  - name: dimProduct
+    description: contains address info for the customers
+  - name: dimSalesTerritory
+    description: contains address info for the customers
+  
